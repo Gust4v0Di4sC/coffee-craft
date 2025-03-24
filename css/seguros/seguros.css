@@ -1,5 +1,5 @@
 .seguros-bg {
-  background-color: var(--cor-11);
+  background-color: var(--cor-p6);
 }
 
 .seguros {
@@ -20,7 +20,7 @@
 }
 
 .seguros-item {
-  background-color: var(--cor-12);
+  background-color: var(--cor-p5);
   padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;

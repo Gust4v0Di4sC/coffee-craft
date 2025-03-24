@@ -1,6 +1,7 @@
 .parceiros {
   padding-top: 60px;
   padding-bottom: 120px;
+  
 }
 
 .parceiros h2 {
@@ -12,7 +13,7 @@
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: auto;
 }
 
