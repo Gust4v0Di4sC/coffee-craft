@@ -1,5 +1,5 @@
 #contato {
-  background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+  background: linear-gradient(var(--cor-p6) 600px, var(--cor-1) 0px);
 }
 
 textarea::placeholder {
@@ -9,6 +9,7 @@ textarea::placeholder {
 .contato {
   display: grid;
   grid-template-columns: 5fr 7fr;
+  margin-top: 30px;
 }
 
 .contato-dados, .contato-formulario {
@@ -18,7 +19,7 @@ textarea::placeholder {
 
 .contato-dados {
   border-radius: 5px 0 0 5px;
-  background: var(--cor-12) url("../../img/decorador/bottom-left.svg") no-repeat bottom 20px left 20px;
+  background: var(--cor-p7) url("../../img/decorador/bottom-left.svg") no-repeat bottom 20px left 20px;
 }
 
 .contato-formulario {
