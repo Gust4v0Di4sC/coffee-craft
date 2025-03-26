@@ -14,12 +14,12 @@
 .depoimento-conteudo {
   padding: 40px 40px 80px 80px;
   align-self: end;
-  background: url("../../img/decorador/bottom-right-p.svg") no-repeat bottom 40px right 40px;
+  background: url("../../img/bottom-right-p.svg") no-repeat bottom 40px right 40px;
 }
 
 .depoimento p {
   max-width: 25ch;
-  font-family: 'Merriweather', serif;
+  font-family: 'Calistoga', serif;
   font-style: italic;
   font-weight: 900;
   margin-bottom: 32px;

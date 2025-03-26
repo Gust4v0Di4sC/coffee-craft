@@ -87,6 +87,12 @@
   background-color: var(--cor-p4);
 }
 
+.titulo-bg2{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--cor-p6);
+}
+
 .titulo p {
   margin-bottom: 4px;
 }

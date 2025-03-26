@@ -1,4 +1,4 @@
-.bicicleta {
+.cafe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: start;
@@ -7,26 +7,26 @@
   padding-bottom: 60px;
 }
 
-.bicicleta-imagens {
+.cafe-imagens {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.bicicleta-imagens img {
+.cafe-imagens img {
   flex: 1;
   min-width: 200px;
 }
 
-.bicicleta-imagens img:first-child {
+.cafe-imagens img:first-child {
   min-width: 100%;
 }
 
-.bicicleta-conteudo > p {
+.cafe-conteudo > p {
   margin-bottom: 32px;
 }
 
-.bicicleta-comprar {
+.cafe-comprar {
   display: grid;
   grid-template-columns: max-content auto;
   align-items: center;
@@ -35,78 +35,78 @@
   margin-bottom: 40px;
 }
 
-.bicicleta-comprar a {
+.cafe-comprar a {
   grid-row: span 2;
 }
 
-.bicicleta-comprar span {
+.cafe-comprar span {
   display: flex;
   align-items: center;
-  background-color: var(--cor-12);
+  background-color: var(--cor-p4);
   padding: 4px 8px;
   border-radius: 5px;
   gap: 8px;
 }
 
-.bicicleta-conteudo h2 {
+.cafe-conteudo h2 {
   text-transform: uppercase;
   letter-spacing: 0.015em;
   margin-bottom: 12px;
 }
 
-.bicicleta-informacoes, .bicicleta-ficha {
+.cafe-informacoes, .cafe-ficha {
   padding: 32px;
-  background-color: var(--cor-12);
+  background-color: var(--cor-p4);
   border-radius: 5px;
 } 
 
-.bicicleta-informacoes {
+.cafe-informacoes {
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
 }
 
-.bicicleta-informacoes img {
+.cafe-informacoes img {
   width: 24px;
   margin-bottom: 8px;
 }
 
-.bicicleta-informacoes h3 {
+.cafe-informacoes h3 {
   margin-bottom: 8px;
 }
 
-.bicicleta-ficha li {
+.cafe-ficha li {
   padding: 4px 0;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--cor-11);
 }
 
-.bicicleta-ficha li:last-child {
+.cafe-ficha li:last-child {
   border-bottom: none;
 }
 
-.bicicleta-ficha span {
-  color: var(--cor-6);
+.cafe-ficha span {
+  color: var(--cor-2);
 }
 
 @media (max-width: 800px) {
-  .bicicleta {
+  .cafe {
     grid-template-columns: 1fr;
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .bicicleta-imagens {
+  .cafe-imagens {
     grid-row: 2;
   }
 }
 
 @media (max-width: 400px) {
-  .bicicleta-informacoes {
+  .cafe-informacoes {
     grid-template-columns: 1fr;
   }
-  .bicicleta-comprar {
+  .cafe-comprar {
     grid-template-columns: 1fr;
   }
 }
