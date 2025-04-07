@@ -1,25 +1,27 @@
- #orcamento {
-  background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+ #compra {
+  background: linear-gradient(var(--cor-p6) 600px, var(--cor-1) 0px);
 }
 
 input::placeholder {
   color: var(--cor-4);
 }
 
-.orcamento {
+.compra { 
+  margin-top: 16px;
   display: grid;
   grid-template-columns: 5fr 7fr;
   padding-bottom: 120px;
 }
 
-.orcamento h2 {
+.compra h2 {
+ 
   text-transform: uppercase;
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.orcamento h2::before {
+.compra h2::before {
   content: "";
   display: inline-block;
   width: 4px;
@@ -29,32 +31,32 @@ input::placeholder {
   left: -12px;
 }
 
-.orcamento-produto, .orcamento-dados {
+.compra-produto, .compra-dados {
   padding: 60px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.orcamento-produto {
+.compra-produto {
   border-radius: 5px 0 0 5px;
-  background: var(--cor-12) url("../../img/decorador/bottom-left.svg") no-repeat bottom 20px left 20px;
+  background: var(--cor-p7) url("../../img/decorador/bottom-left.svg") no-repeat bottom 20px left 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: start;
   gap: 20px;
 }
 
-.orcamento-produto > * {
+.compra-produto > * {
   grid-column: 1/-1;
 }
 
-.orcamento-produto > label {
+.compra-produto > label {
   grid-column: initial;
 }
 
-.orcamento-produto label { 
+.compra-produto label { 
   font: 500 1rem/1.5 'Poppins', sans-serif;
-  color: var(--cor-4);
-  background-color: var(--cor-10);
+  color: var(--cor-0);
+  background-color: var(--cor-p4);
   display: block;
   padding: 12px 16px;
   border-radius: 5px;
@@ -65,7 +67,7 @@ input::placeholder {
   border: 1px solid var(--cor-10);
 }
 
-.orcamento-produto label::before {
+.compra-produto label::before {
   content: "";
   display: inline-block;
   box-sizing: border-box;
@@ -76,62 +78,62 @@ input::placeholder {
   margin-right: 8px;
 }
 
-.orcamento-produto input:checked + label {
+.compra-produto input:checked + label {
   background: var(--cor-0);
   color: var(--cor-11);
 }
 
-.orcamento-produto input:checked + label::before {
+.compra-produto input:checked + label::before {
   border-color: var(--cor-7);
   box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 5px var(--cor-7);
 }
 
-.orcamento-produto label:hover {
-  background-color: var(--cor-9);
-  border-color: var(--cor-9);
+.compra-produto label:hover {
+  background-color: var(--cor-p4);
+  border-color: var(--cor-p4);
 }
 
-.orcamento-produto input:focus + label:hover {
+.compra-produto input:focus + label:hover {
   box-shadow: 0 0 0 2px var(--cor-p1);
   border-color: var(--cor-12);
 }
 
-.orcamento-produto label:focus,
+.compra-produto label:focus,
 
-.orcamento-produto label span {
+.compra-produto label span {
   display: none;
 }
 
-.orcamento-produto input:checked + label span {
+.compra-produto input:checked + label span {
   display: inline-block;
 }
 
-.orcamento-produto input {  
+.compra-produto input {  
   opacity: 0;
   position: absolute;
   pointer-events: none;
 }
 
-.orcamento-dados {
+.compra-dados {
   border-radius: 0 5px 5px 0;
   background: var(--cor-0) url("../../img/decorador/bottom-right.svg") no-repeat bottom 20px right 20px;
 }
 
-.orcamento-conteudo {
+.compra-conteudo {
   display: none;
 } 
 
-.orcamento-conteudo h2, .orcamento-dados h2:nth-of-type(n + 2) {
+.compra-conteudo h2, .compra-dados h2:nth-of-type(n + 2) {
   margin-top: 20px;
 }
 
-#bikcraft:checked ~ #orcamento-bikcraft,
-#seguro:checked ~ #orcamento-seguro {
+#cafe:checked ~ #compra-cafe,
+#plano:checked ~ #compra-plano {
   display: grid;
   gap: 20px;
 }
 
-.orcamento-detalhes {
+.compra-detalhes {
   display: none;
   background: var(--cor-0);
   padding: 20px;
@@ -140,43 +142,43 @@ input::placeholder {
   align-items: center;
 }
 
-.orcamento-detalhes li {
+.compra-detalhes li {
   font-weight: 500;
   display: flex;
   align-items: center;
   margin-bottom: 8px;
 }
 
-.orcamento-detalhes li img {
+.compra-detalhes li img {
   width: 16px;
   margin-right: 8px;
 }
 
-.orcamento-produto input:checked + label + .orcamento-detalhes {
+.compra-produto input:checked + label + .compra-detalhes {
   display: grid;
 }
 
 @media (max-width: 1200px) {
-  .orcamento-produto, .orcamento-dados {
+  .compra-produto, .compra-dados {
     padding: 32px;
   }
 }
 
 @media (max-width: 800px) {
-  .orcamento {
+  .compra {
     grid-template-columns: 1fr;
   }
-  .orcamento-produto {
+  .compra-produto {
     border-radius: 5px 5px 0 0;
     background: var(--cor-12);
   }
-  .orcamento-dados {
+  .compra-dados {
     border-radius: 0 0 5px 5px;
   }
 }
 
 @media (max-width: 400px) {
-  .orcamento-produto {
+  .compra-produto {
     grid-template-columns: 1fr;
   }
 }
