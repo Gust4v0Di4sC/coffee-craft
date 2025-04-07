@@ -46,17 +46,24 @@ function eventosPerguntas(pergunta) {
 perguntas.forEach(eventosPerguntas);
 
 // GALERIA DE BICICLETAS
+const galeria = document.querySelectorAll('.cafe-imagens img');
 
-const galeria = document.querySelectorAll('.bicicleta-imagens img');
+const tituloGaleria = document.getElementById('title-coffee');
 
-const galeriaContainer = document.querySelector('.bicicleta-imagens');
+const precoGaleria = document.getElementById('price-coffee');
+
+const galeriaContainer = document.querySelector('.cafe-imagens');
 
 function trocarImagem(event) {
   const img = event.currentTarget;
   const media = matchMedia("(min-width: 1000px)").matches;
   if (media) {
     galeriaContainer.prepend(img);
+
+    tituloGaleria.textContent = img.dataset.title; // Pega data-title
+    precoGaleria.textContent = img.dataset.price;  // Pega data-price
   } 
+  
 }
 
 function eventosGaleria(img) {
@@ -71,6 +78,36 @@ if (window.SimpleAnime) {
   new SimpleAnime();
 }
 
+// Função para extrair parâmetros da URL
+function getUrlParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param); // Retorna "Cafe1.png" ou "Cafe2.png"
+}
 
+// Função para destacar a imagem correspondente
+function destacarImagem() {
+  const imgParam = getUrlParam('img'); // Pega o valor de ?img=...
+
+  if (imgParam) {
+    const galeria = document.querySelector('.cafe-imagens');
+    const imagens = document.querySelectorAll('.cafe-imagens img');
+
+    // Encontra a imagem com src correspondente ao parâmetro
+    const imgSelecionada = Array.from(imagens).find(img => 
+      img.src.includes(imgParam) // Verifica se o src contém "Cafe1.png" ou similar
+    );
+
+    if (imgSelecionada) {
+      galeria.prepend(imgSelecionada); // Move para o topo da galeria
+
+      // Atualiza título e preço
+      tituloGaleria.textContent = imgSelecionada.dataset.title;
+      precoGaleria.textContent = imgSelecionada.dataset.price;
+    }
+  }
+}
+
+// Executa quando a página carrega
+document.addEventListener('DOMContentLoaded', destacarImagem);
 
 

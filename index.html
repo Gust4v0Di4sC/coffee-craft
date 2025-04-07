@@ -9,7 +9,9 @@
   <link rel="icon" href="favicon.svg" width="32" height="32" type="image+svg/xml">
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  
   <script>document.documentElement.classList.add('js');</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +20,7 @@
 </head>
 
 <body>
-  <header class="header-bg">
+  <header class="header-bg" >
     <div class="header container">
       <a href="./">
         <img src="./img/CoffeeCraft.svg" width="136" height="31" alt="CoffeeCraft">
@@ -37,11 +39,11 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0 fadeInLeft" data-anime="200">Cafés artesanais feitos por quem entende<span class="cor-p2">.</span></h1>
-        <p class="font-2-l cor-5 fadeInLeft" data-anime="400">Cafés de excelente qualidade, com grãos selecionados, tudo feito artesanalmente com muito amor e carinho.</p>
-        <a class="botao fadeInLeft" data-anime="400" href="./cafes.html">Selecione o seu</a>
+        <h1 class="font-1-xxl cor-0 " >Cafés artesanais feitos por quem entende<span class="cor-p2">.</span></h1>
+        <p class="font-2-l cor-5 " >Cafés de excelente qualidade, com grãos selecionados, tudo feito artesanalmente com muito amor e carinho.</p>
+        <a class="botao "  href="./cafes.html">Selecione o seu</a>
       </div>
-      <picture data-anime="800" class="fadeInLeft">
+      <picture >
         <source media="(max-width: 800px)" srcset="./img/Cafe1.png">
         <img src="./img/Cafe1.png" width="1280" height="1600" alt="Cafe extraforte">
       </picture>
@@ -49,7 +51,7 @@
   </main>
 
   <article class="cafes-lista">
-    <h2 class=" container font-1-xxl">Para todos os gostos<span class="cor-p2">.</span></h2>
+    <h2 data-aos="fade-up-left" class=" container font-1-xxl">Para todos os gostos<span class="cor-p2">.</span></h2>
     <ul>
       <li>
         <a href="./cafes/tradicional.html">
@@ -212,7 +214,10 @@
     </div>
   </footer>
 
-  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./js/script.js"></script>
 
 </body>
