@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tradicional">
+  <title>Tradicional | CoffeeCraft</title>
+  <link rel="icon" href="../favicon.svg" width="32" height="32" type="image/svg+xml">
+  <link rel="preload" href="../css/style.min.css" as="style">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body id="cafe">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="/">
+        <img src="../img/CoffeeCraft.svg" width="136" height="31" alt="Coffeecraft">
+      </a> <!-- criando uma marca como um link -->
+
+      <nav aria-label="primaria">
+        <ul class="header-menu font-1-m cor-0">
+          <li><a href="../cafes.html">Cafés</a></li>
+          <li><a href="../planos.html">Planos</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="titulo-bg2">
+    <div>
+      <div class="titulo container">
+        <p data-aos="fade-left" id="price-coffee" class="font-2-xl cor-5">R$ 169,90</p>
+        <h1 data-aos="fade-left" id="title-coffee" class="font-1-xxl cor-0">Tradicional<span class="cor-p1">.</span></h1>
+      </div>
+    </div>
+
+    <div class="cafe container">
+      <div class="cafe-imagens">
+        <img src="../img/Cafe3.png" width="1120" height="880" alt="cafe 1" data-title="Tradicional" 
+        data-price="R$ 169,90" >
+        <img src="../img/Cafe2.png" width="1120" height="880" alt="cafe 2" data-title="Gourmet" 
+        data-price="R$ 359,90">
+        <img src="../img/Cafe1.png" width="1120" height="880" alt="cafe 3"data-title="Extraforte" 
+        data-price="R$ 450,99">
+      </div>
+
+      <div class="cafe-conteudo">
+        <p class="font-2-l cor-5">Aqui, cada xícara é preparada com grãos selecionados e paixão pelo café. Desfrute do aroma, do sabor e do aconchego de um café tradicional feito para você.
+        </p>
+        <div class="cafe-comprar">
+          <a class="botao" href="../compra.html?tipo=cafe&produto=tradicional">Comprar Agora</a>
+          <span class="font-1-xs cor-2"><img src="../img/entrega.svg" width="16" height="16" alt=""> entrega em 5 dias</span>
+          <span class="font-1-xs cor-2"><img src="../img/estoque.svg" width="16" height="16" alt=""> 18 em estoque</span>
+        </div>
+
+
+        <h2 class="font-1-m cor-0">Informações</h2>
+        <ul class="cafe-informacoes">
+          <li>
+            <img src="../img/CoffeeBean.svg" width="24" height="24" alt="">
+            <h3 class="font-1-m cor-0">Grão selecionado</h3>
+            <p class="font-2-xs cor-5">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+          </li>
+          <li>
+            <img src="../img/speed.svg" width="24" height="24" alt="">
+            <h3 class="font-1-m cor-0">Torra controlada</h3>
+            <p class="font-2-xs cor-5">Escolhemos os melhores grãos para um café mais aromático, encorpado e saboroso. </p>
+          </li>
+          <li>
+            <img src="../img/tracker.svg" width="24" height="24" alt="">
+            <h3 class="font-1-m cor-0">Entrega rastreada</h3>
+            <p class="font-2-xs cor-5">Acompanhe seu pedido em tempo real e receba seu café com praticidade e segurança.  </p>
+          </li>
+          <li>
+            <img src="../img/wavesfull.svg" width="24" height="24" alt="">
+            <h3 class="font-1-m cor-0">Intensidade</h3>
+            <p class="font-2-xs cor-5">Do suave ao extra forte, temos a intensidade perfeita para o seu paladar.</p>
+          </li>
+        </ul>
+        <h2 class="font-1-m cor-0">Ficha Técnica</h2>
+        <ul class="cafe-ficha font-2-s cor-2">
+          <li>Peso <span>250g | 500g | 1kg</span></li>
+          <li>Ingredientes <span>100% café puro</span></li>
+          <li>Origem <span>Minas Gerais</span></li>
+          <li>Embalagem <span>Pacote com válvula de frescor </span></li>
+          <li>Armazenamento <span>Manter em local seco e arejado</span></li>
+          <li>Validade <span>29 meses após a fabricação</span></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <article class="cafes-lista container">
+    <h2 data-aos="fade-left" class="font-1-xxl">escolha o seu<span class="cor-p2">.</span></h2>
+    <ul>
+      <li>
+        <a href="./cafe-interno.html?img=Cafe1.png">
+          <img data-aos="fade-up-left" src="../img/Cafe1.png" width="1120" height="680" alt="cafe preto">
+          <h3 class="font-1-xl">Extraforte</h3>
+          <span class="font-2-m cor-8">R$ 480,99</span>
+        </a>
+      </li>
+
+
+      <li>
+        <a  href="./cafe-interno.html?img=Cafe2.png">
+          <img data-aos="fade-down-right" src="../img/Cafe2.png" width="1120" height="680" alt="cafe preto">
+          <h3 class="font-1-xl">Gourmet</h3>
+          <span class="font-2-m cor-8">R$ 359,90</span>
+        </a>
+      </li>
+    </ul>
+  </article>
+
+  <article class="seguro-bg">
+    <div class="seguro container">
+      <div class="seguro-imagem">
+        <img src="../img/banner2.jpg" width="1360" height="1512" alt="grãos de cafe">
+      </div>
+
+      <div class="seguro-conteudo">
+        <h2 class="font-1-xxl cor-0">Desfrute do melhor café <span class="cor-p2">sempre.</span></h2>
+        <p class="font-2-l cor-5">Inscreva-se em um dos planos de assinatura e receba sempre  o melhor café e muito mais.</p>
+        <a class="botao" href="../planos.html">Conheça Mais</a>
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="../img/CoffeeCraft.svg" width="136" height="31" alt="Bikcraft">
+      <div class="footer-contato">
+        <h3 class="font-2-l-b cor-0">Contato</h3>
+        <ul class="font-2-ss cor-5">
+          <li><a href="tel:+552199999999"> +55 31 99999-9999</a></li>
+          <li><a href="mailto:contato@cafecraftado.com">contato@cafecraftado.com</a></li>
+          <li>Rua dos cafezais, 425</li>
+          <li>Minas Gerais- MG</li>
+        </ul>
+
+        <div class="footer-redes">
+          <a href="./">
+            <img src="../img/instagram.svg" width="32" height="32" alt="instagram">
+          </a>
+          <a href="./">
+            <img src="../img/facebook.svg" width="32" height="32" alt="facebook">
+          </a>
+          <a href="./">
+            <img src="../img/youtube.svg" width="32" height="32" alt="youtube">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-informacoes">
+        <h3 class="font-2-l-b cor-0">Informações</h3>
+        <nav>
+          <ul class="font-1-m cor-5">
+            <li><a href="./cafes.html">Cafés</a></li>
+            <li><a href="./planos.html">Planos</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy font-2-ss cor-6">CoffeeCraft © Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/script.min.js"></script>
+
+</body>
+
+</html>
