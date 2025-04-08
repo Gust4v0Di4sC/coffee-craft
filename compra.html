@@ -9,6 +9,7 @@
   <link rel="icon" href="favicon.svg" width="32" height="32" type="image+svg/xml">
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script>document.documentElement.classList.add('js');</script>
 
@@ -38,8 +39,8 @@
   <main>
     <div class="titulo-bg">
       <div class="titulo container">
-        <p class="font-2-l-b cor-5">cotações no seu email</p>
-        <h1 class="font-1-xxl cor-0">solicite um plano ou compre agora<span class="cor-p2">.</span></h1>
+        <p data-aos="fade-left" class="font-2-l-b cor-5">cotações no seu email</p>
+        <h1 data-aos="fade-left" class="font-1-xxl cor-0">solicite um plano ou compre agora<span class="cor-p2">.</span></h1>
       </div>
     </div>
 
@@ -200,6 +201,10 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./js/script.js"></script>
 
 </body>

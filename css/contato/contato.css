@@ -19,12 +19,12 @@ textarea::placeholder {
 
 .contato-dados {
   border-radius: 5px 0 0 5px;
-  background: var(--cor-p7) url("../../img/decorador/bottom-left.svg") no-repeat bottom 20px left 20px;
+  background: var(--cor-p7) url("../../img/bottom-left.svg") no-repeat bottom 20px left 20px;
 }
 
 .contato-formulario {
   border-radius: 0 5px 5px 0;
-  background: var(--cor-0) url("../../img/decorador/bottom-right.svg") no-repeat bottom 20px right 20px;
+  background: var(--cor-0) url("../../img/bottom-right-p.svg") no-repeat bottom 20px right 20px;
 }
 
 .contato-dados h2 {

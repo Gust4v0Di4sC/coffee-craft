@@ -7,7 +7,6 @@
 }
 
 .planos {
-  margin-top: 60px;
   padding-bottom: 120px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,6 +19,7 @@
 }
 
 .planos h2 {
+  margin-top: 30px;
   grid-column: 1/-1;
 }
 
@@ -31,7 +31,9 @@
   border-radius: 5px;
 }
 
-
+.plano-top{
+  margin-top: 30px;
+}
 
 
 .planos-item h3 {

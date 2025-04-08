@@ -8,6 +8,7 @@
   <title>Tradicional | CoffeeCraft</title>
   <link rel="icon" href="../favicon.svg" width="32" height="32" type="image/svg+xml">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script>document.documentElement.classList.add('js');</script>
 
@@ -36,8 +37,8 @@
   <main class="titulo-bg2">
     <div>
       <div class="titulo container">
-        <p id="price-coffee" class="font-2-xl cor-5">R$ 169,90</p>
-        <h1 id="title-coffee" class="font-1-xxl cor-0">Tradicional<span class="cor-p1">.</span></h1>
+        <p data-aos="fade-left" id="price-coffee" class="font-2-xl cor-5">R$ 169,90</p>
+        <h1 data-aos="fade-left" id="title-coffee" class="font-1-xxl cor-0">Tradicional<span class="cor-p1">.</span></h1>
       </div>
     </div>
 
@@ -98,11 +99,11 @@
   </main>
 
   <article class="cafes-lista container">
-    <h2 class="font-1-xxl">escolha o seu<span class="cor-p2">.</span></h2>
+    <h2 data-aos="fade-left" class="font-1-xxl">escolha o seu<span class="cor-p2">.</span></h2>
     <ul>
       <li>
         <a href="./cafe-interno.html?img=Cafe1.png">
-          <img src="../img/Cafe1.png" width="1120" height="680" alt="cafe preto">
+          <img data-aos="fade-up-left" src="../img/Cafe1.png" width="1120" height="680" alt="cafe preto">
           <h3 class="font-1-xl">Extraforte</h3>
           <span class="font-2-m cor-8">R$ 480,99</span>
         </a>
@@ -110,8 +111,8 @@
 
 
       <li>
-        <a href="./cafe-interno.html?img=Cafe2.png">
-          <img src="../img/Cafe2.png" width="1120" height="680" alt="cafe preto">
+        <a  href="./cafe-interno.html?img=Cafe2.png">
+          <img data-aos="fade-down-right" src="../img/Cafe2.png" width="1120" height="680" alt="cafe preto">
           <h3 class="font-1-xl">Gourmet</h3>
           <span class="font-2-m cor-8">R$ 359,90</span>
         </a>
@@ -172,6 +173,10 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="../js/script.js"></script>
 
 </body>

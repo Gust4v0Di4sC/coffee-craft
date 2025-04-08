@@ -11,7 +11,7 @@
 }
 
 .cafes:nth-child(even){
-  background: url("../../img/decorador/top-right.svg") no-repeat top 40px right 20px;
+  background: url("../../img/bottom-top-right.svg") no-repeat top 40px right 20px;
 }
 
 .cafes-imagem {
