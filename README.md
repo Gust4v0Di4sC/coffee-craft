@@ -1,4 +1,4 @@
-# Coffee Craft - README
+# Coffee Craft
 
 ![Café Logo](https://github.com/Gust4v0Di4sC/coffee-craft/blob/main/img/CoffeeCraft.svg)
 
