@@ -1,5 +1,25 @@
 {
+  "name": "coffee-craft",
+  "version": "1.0.0",
+  "description": "site coffee",
+  "homepage": "https://github.com/Gust4v0Di4sC/coffee-craft#readme",
+  "bugs": {
+    "url": "https://github.com/Gust4v0Di4sC/coffee-craft/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gust4v0Di4sC/coffee-craft.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  
   "dependencies": {
     "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "mkdirp": "^3.0.1",
+    "parcel-bundler": "^1.12.5"
   }
 }
