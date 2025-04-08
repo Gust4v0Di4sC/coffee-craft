@@ -18,17 +18,17 @@
 @import "./home/depoimento.css";
 
 
-/* BICICLETAS */
+/* CAFES */
 @import "./cafes/cafes-lista.css";
 @import "./cafes/cafes.css";
 
 
-/* BICICLETA */
+/* CAFE */
 @import "./cafe/cafe.css";
 @import "./cafe/seguro.css";
 
 
-/* SEGUROS */
+/* PLANOS */
 @import "./planos/planos.css";
 @import "./planos/perguntas.css";
 @import "./planos/vantagens.css";
@@ -39,12 +39,11 @@
 @import "./contato/lojas.css";
 
 
-/* ORÇAMENTO */
+/* COMPRA */
 @import "./compra/compra.css";
 
 
-/* TERMOS */
-@import "./termos/termos.css";
+
 
 
 
