@@ -1,0 +1,52 @@
+@import "./global/global.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/animacao.css";
+
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* UTILIDADES */
+@import "./utilidades/componentes.css";
+@import "./utilidades/formulario.css";
+
+
+/* HOME */
+@import "./home/introducao.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+
+
+/* CAFES */
+@import "./cafes/cafes-lista.css";
+@import "./cafes/cafes.css";
+
+
+/* CAFE */
+@import "./cafe/cafe.css";
+@import "./cafe/seguro.css";
+
+
+/* PLANOS */
+@import "./planos/planos.css";
+@import "./planos/perguntas.css";
+@import "./planos/vantagens.css";
+
+
+/* CONTATO */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
+
+
+/* COMPRA */
+@import "./compra/compra.css";
+
+
+
+
+
+
+
+
+

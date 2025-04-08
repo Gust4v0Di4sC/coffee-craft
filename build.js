@@ -1,43 +1,27 @@
 const fs = require('fs');
-const htmlMinifier = require('html-minifier');
-const terser = require('terser');
-const cleanCSS = require('clean-css');
+const { promisify } = require('util');
+const copyFile = promisify(fs.copyFile);
+const mkdir = promisify(fs.mkdir);
 
-// Função principal async
 async function build() {
   try {
-    // Minificar HTML
-    const html = fs.readFileSync('index.html', 'utf8');
-    const minifiedHtml = htmlMinifier.minify(html, {
-      collapseWhitespace: true,
-      removeComments: true
-    });
+    // Criar pasta dist
+    await mkdir('dist', { recursive: true });
 
-    // Minificar JS (com await dentro de função async)
-    const js = fs.readFileSync('js/script.js', 'utf8');
-    const minifiedJs = await terser.minify(js);
+    // Copiar TODOS os HTMLs
+    const htmlFiles = fs.readdirSync('.').filter(file => file.endsWith('.html'));
+    await Promise.all(htmlFiles.map(file => copyFile(file, `dist/${file}`)));
 
-    // Minificar CSS
-    const css = fs.readFileSync('css/style.css', 'utf8');
-    const minifiedCss = new cleanCSS().minify(css).styles;
+    // Copiar pastas
+    const folders = ['css', 'js', 'img'];
+    await Promise.all(folders.map(folder => {
+      return fs.promises.cp(folder, `dist/${folder}`, { recursive: true });
+    }));
 
-    // Criar estrutura de pastas
-    if (!fs.existsSync('dist')) {
-      fs.mkdirSync('dist');
-      fs.mkdirSync('dist/js');
-      fs.mkdirSync('dist/css');
-    }
-
-    // Salvar arquivos
-    fs.writeFileSync('dist/index.html', minifiedHtml);
-    fs.writeFileSync('dist/js/script.js', minifiedJs.code);
-    fs.writeFileSync('dist/css/style.css', minifiedCss);
-
-    console.log('✅ Build concluído com sucesso!');
+    console.log('✅ Todas páginas e assets copiados!');
   } catch (error) {
-    console.error('❌ Erro durante o build:', error);
+    console.error('❌ Erro:', error);
   }
 }
 
-// Executar a função
 build();

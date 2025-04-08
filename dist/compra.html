@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compra">
+  <title>Compra | CoffeeCraft</title>
+  <link rel="icon" href="favicon.svg" width="32" height="32" type="image+svg/xml">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+
+<body id="compra">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./">
+        <img src="./img/CoffeeCraft.svg" width="136" height="31" alt="Bikcraft">
+      </a> <!-- criando uma marca como um link -->
+
+      <nav aria-label="primaria">
+        <ul class="header-menu font-1-m cor-0">
+          <li><a href="./cafes.html">Cafés</a></li>
+          <li><a href="./planos.html">Planos</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="titulo-bg">
+      <div class="titulo container">
+        <p data-aos="fade-left" class="font-2-l-b cor-5">cotações no seu email</p>
+        <h1 data-aos="fade-left" class="font-1-xxl cor-0">solicite um plano ou compre agora<span class="cor-p2">.</span></h1>
+      </div>
+    </div>
+
+    <form class="compra container" action="./compra.html">
+      <div class="compra-produto">
+        <h2 class="font-1-xs cor-5">Café ou Plano?</h2>
+
+        <input type="radio" name="tipo" value="cafe" id="cafe">
+        <label for="cafe">Café</label>
+
+        <input type="radio" name="tipo" value="plano" id="plano">
+        <label for="plano">Plano</label>
+
+        <div class="compra-conteudo" id="compra-cafe">
+          <h2 class="font-1-xs cor-5">Escolha o seu</h2>
+
+          <input type="radio" name="produto" value="tradicional" id="tradicional">
+          <label for="tradicional">Tradicional <span>R$ 169,90</span></label>
+          <div class="compra-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/BatteryMedium.svg" width="24" height="24" alt="">Nível da torra</li>
+              <li><img src="./img/Waves.svg" width="24" height="24" alt="">Intensidade</li>
+              <li><img src="./img/speed.svg" alt="">Torra Controlada</li>
+              <li><img src="./img/tracker.svg" width="24" height="24" alt="">Rastreado</li>
+            </ul>
+            <img src="./img/Cafe3.png" width="1120" height="680" alt="Bicicleta preta">
+          </div>
+
+          <input type="radio" name="produto" value="gourmet" id="gourmet">
+          <label for="gourmet">Gourmet<span>R$ 359,90</span></label>
+          <div class="compra-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/BatteryMedium2.svg" width="24" height="24" alt="">Nível da torra</li>
+              <li><img src="./img/Waves2.svg" width="24" height="24" alt="">Intensidade</li>
+              <li><img src="./img/speed.svg" alt="">Torra Controlada</li>
+              <li><img src="./img/tracker.svg" width="24" height="24" alt="">Rastreado</li>
+            </ul>
+            <img src="./img/Cafe2.png" width="1120" height="680" alt="Bicicleta preta">
+          </div>
+          <input type="radio" name="produto" value="extraforte" id="extraforte">
+          <label for="extraforte">Extraforte <span>R$ 450</span></label>
+          <div class="compra-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/BatteryMedium3.svg" width="24" height="24" alt="">Nível da torra</li>
+              <li><img src="./img/Waves3.svg" width="24" height="24" alt="">Intensidade</li>
+              <li><img src="./img/speed.svg" alt="">Torra Controlada</li>
+              <li><img src="./img/tracker.svg" width="24" height="24" alt="">Rastreado</li>
+            </ul>
+            <img src="./img/Cafe3.png" width="1120" height="680" alt="Bicicleta preta">
+          </div>
+        </div>
+
+        <div class="compra-conteudo" id="compra-plano">
+          <h2 class="font-1-xs cor-5">Escolha o plano</h2>
+
+          <input type="radio" name="produto" value="prata" id="prata">
+          <label for="prata">Prata <span>R$ 199</span></label>
+
+          <input type="radio" name="produto" value="ouro" id="ouro">
+          <label for="ouro">Ouro <span>R$ 299</span></label>
+        </div>
+      </div>
+
+      <div class="compra-dados form">
+        <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+
+        <div>
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome">
+        </div>
+
+        <div class="col-2">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+        </div>
+
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <h2 class="font-1-xs cor-9 col-2">Entrega</h2>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep">
+        </div>
+
+        <div>
+          <label for="numero">Número</label>
+          <input type="text" id="numero" name="numero">
+        </div>
+
+        <div>
+          <label for="logradouro">Logradouro</label>
+          <input type="text" id="logradouro" name="logradouro" placeholder="rua, avenida..">
+        </div>
+
+        <div>
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro">
+        </div>
+
+        <div>
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade">
+        </div>
+
+        <div>
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado">
+        </div>
+
+        <button class="botao col-2">Solicitar Compra</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="./img/CoffeeCraft.svg" width="136" height="31" alt="Bikcraft">
+      <div class="footer-contato">
+        <h3 class="font-2-l-b cor-0">Contato</h3>
+        <ul class="font-2-ss cor-5">
+          <li><a href="tel:+552199999999"> +55 31 99999-9999</a></li>
+          <li><a href="mailto:contato@cafecraftado.com">contato@cafecraftado.com</a></li>
+          <li>Rua dos cafezais, 425</li>
+          <li>Minas Gerais- MG</li>
+        </ul>
+
+        <div class="footer-redes">
+          <a href="./">
+            <img src="./img/instagram.svg" width="32" height="32" alt="instagram">
+          </a>
+          <a href="./">
+            <img src="./img/facebook.svg" width="32" height="32" alt="facebook">
+          </a>
+          <a href="./">
+            <img src="./img/youtube.svg" width="32" height="32" alt="youtube">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-informacoes">
+        <h3 class="font-2-l-b cor-0">Informações</h3>
+        <nav>
+          <ul class="font-1-m cor-5">
+            <li><a href="./cafes.html">Cafés</a></li>
+            <li><a href="./planos.html">Planos</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy font-2-ss cor-6">CoffeeCraft © Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/script.min.js"></script>
+
+</body>
+
+</html>
