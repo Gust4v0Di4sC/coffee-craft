@@ -1,0 +1,104 @@
+.cafes-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-p5) 0%);
+}
+
+.cafes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;  
+}
+
+.cafes:nth-child(even){
+  background: url("../../img/bottom-top-right.svg") no-repeat top 40px right 20px;
+}
+
+.cafes-imagem {
+  display: grid;
+}
+
+.cafes-imagem img {
+  grid-area: 1/1;
+}
+.cafes-imagem span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  background: var(--cor-12);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px 0 0 5px;
+}
+
+.cafes-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto; 
+  align-content: start;
+}
+
+.cafes h2, .cafes p {
+  grid-column: 1/-1;
+}
+
+.cafes h2 {
+  margin-bottom: 20px;
+}
+
+.cafes h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.cafes p {
+  margin-bottom: 32px;
+}
+
+.cafes a {
+  place-self: end;
+}
+
+.cafes li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cafes ul {
+  display: grid;
+  gap: 16px;
+}
+
+.cafes-conteudo img {
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .cafes-bg {
+    background: var(--cor-11);
+  }
+  .cafes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cafes-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .cafes ul {
+    font-size: 1rem;
+    margin-bottom: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cafes a {
+    place-self: start;
+  }
+}
